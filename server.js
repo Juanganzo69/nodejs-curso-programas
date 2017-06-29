@@ -54,6 +54,13 @@ app.get('/bad', ( req, res ) => {
     });
 });
 
+app.get('/projects', ( req, res )=>{
+    res.render('projects',{
+        titulo: 'Aquí estan todos los projectos que he hecho', 
+        pageTittle: 'Projectos'
+    });
+});
+
 app.listen(port, ()=>{
     console.log('El servidor esta en el puerto 3000');
 });
